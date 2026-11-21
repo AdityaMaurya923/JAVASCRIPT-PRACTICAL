@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--
+  Name       : Aditya Kumar Maurya
+  Roll No.   : 2510303042
+  Assignment 9, Task 3 : localStorage note
+-->
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Assignment 9 - Task 3</title>
+</head>
+<body>
+  <input type="text" id="note" size="40" placeholder="Write a note">
+  <button id="save">Save</button>
+
+  <script>
+    const box = document.getElementById("note");
+
+    // When the page opens, show the saved text
+    const saved = localStorage.getItem("note");
+    if (saved !== null) {
+      box.value = saved;
+    }
+
+    // Save the text when the button is clicked
+    document.getElementById("save").addEventListener("click", function () {
+      localStorage.setItem("note", box.value);
+    });
+  </script>
+</body>
+</html>

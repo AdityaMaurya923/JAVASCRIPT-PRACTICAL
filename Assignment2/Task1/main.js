@@ -1,0 +1,12 @@
+/*
+ * Name       : Aditya Kumar Maurya
+ * Roll No.   : 2510303042
+ * Assignment 2, Task 1 : Arithmetic operators
+ */
+const a = 17;
+const b = 5;
+
+console.log("Sum: " + (a + b));
+console.log("Difference: " + (a - b));
+console.log("Product: " + (a * b));
+console.log("Quotient: " + (a / b));
